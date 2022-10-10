@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "yarn workspaces foreach --verbose --parallel --topological-dev run build",
     "lint": "prettier --check .",
     "fix": "prettier --write .",
     "postinstall": "husky install",
