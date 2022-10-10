@@ -7,8 +7,10 @@
   "type": "module",
   "scripts": {
     "build": "yarn workspaces foreach --verbose --parallel --topological-dev run build",
-    "lint": "prettier --check .",
-    "fix": "prettier --write .",
+    "lint:eslint": "eslint --ext .js,.cjs,.ts,.jsx,.tsx .",
+    "lint:prettier": "prettier --check .",
+    "fix:eslint": "eslint --fix --ext .js,.cjs,.ts,.jsx,.tsx .",
+    "fix:prettier": "prettier --write .",
     "postinstall": "husky install",
     "g:tsc": "cd $INIT_CWD && tsc"
   },
@@ -16,6 +18,13 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.0.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
