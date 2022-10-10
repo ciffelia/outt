@@ -346,10 +346,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/node16-strictest-esm@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "@tsconfig/node16-strictest-esm@npm:1.0.3"
-  checksum: cc5650a1752e29f1adf5c4ff0a60e4f948c34d5a1e489a4504f3125c8b9b6f915f94dcd06e0936211a349d067469380e25f6ab461a4c0fd4a3b71c7108378fd7
+"@tsconfig/node16-strictest@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@tsconfig/node16-strictest@npm:1.0.4"
+  checksum: f644352bdb0d5f9c42bfe22d9b3c3b18447fa5e1ff4e99b758392856ee5a478daf525fa1ebbae8157980d47c32109302996a235710a0a158eb6980efe3dd5de6
   languageName: node
   linkType: hard
 
@@ -2710,7 +2710,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.1.2
     "@commitlint/config-conventional": ^17.1.0
-    "@tsconfig/node16-strictest-esm": ^1.0.3
+    "@tsconfig/node16-strictest": ^1.0.4
     "@types/node": ^16.11.64
     "@typescript-eslint/eslint-plugin": ^5.39.0
     eslint: ^8.25.0

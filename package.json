@@ -1,7 +1,6 @@
 {
   "name": "outt",
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "tsc",
     "lint": "run-p --print-name --aggregate-output 'lint:*'",
@@ -16,7 +15,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "@tsconfig/node16-strictest-esm": "^1.0.3",
+    "@tsconfig/node16-strictest": "^1.0.4",
     "@types/node": "^16.11.64",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "eslint": "^8.25.0",
