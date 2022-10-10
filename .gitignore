@@ -7,7 +7,13 @@
 !/.yarn/versions
 /.pnp.*
 
+# TypeScript
+*.tsbuildinfo
+
+# Next.js
+/.next
+/out
+/next-env.d.ts
+
 # WebStorm
 /.idea
-
-dist
