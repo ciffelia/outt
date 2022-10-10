@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "prettier --check .",
     "fix": "prettier --write .",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "g:tsc": "cd $INIT_CWD && tsc"
   },
   "packageManager": "yarn@3.2.4",
   "devDependencies": {
@@ -15,6 +16,7 @@
     "@commitlint/config-conventional": "^17.1.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "typescript": "~4.8.4"
   }
 }

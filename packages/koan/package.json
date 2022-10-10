@@ -1,4 +1,15 @@
 {
   "name": "@outt/koan",
-  "private": true
+  "private": true,
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "yarn g:tsc --watch",
+    "build": "yarn g:tsc"
+  },
+  "devDependencies": {
+    "@tsconfig/node16-strictest-esm": "^1.0.3",
+    "@types/node": "^16.11.64"
+  }
 }
