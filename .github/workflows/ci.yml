@@ -14,3 +14,15 @@ jobs:
           cache: yarn
       - run: yarn install --immutable
       - run: yarn run lint
+
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          check-latest: true
+          cache: yarn
+      - run: yarn install --immutable
+      - run: yarn run build
