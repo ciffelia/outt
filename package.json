@@ -1,25 +1,23 @@
 {
   "name": "outt",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "type": "module",
   "scripts": {
-    "build": "yarn workspaces foreach --verbose --parallel --topological-dev run build",
+    "build": "tsc",
     "lint": "run-p --print-name --aggregate-output 'lint:*'",
     "lint:eslint": "eslint --ext .js,.cjs,.ts,.jsx,.tsx .",
     "lint:prettier": "prettier --check .",
     "fix": "run-s --print-name fix:eslint fix:prettier",
     "fix:eslint": "eslint --fix --ext .js,.cjs,.ts,.jsx,.tsx .",
     "fix:prettier": "prettier --write .",
-    "postinstall": "husky install",
-    "g:tsc": "cd $INIT_CWD && tsc"
+    "postinstall": "husky install"
   },
   "packageManager": "yarn@3.2.4",
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@tsconfig/node16-strictest-esm": "^1.0.3",
+    "@types/node": "^16.11.64",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
