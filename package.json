@@ -1,6 +1,9 @@
 {
   "name": "outt",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "lint": "prettier --check .",
     "fix": "prettier --write .",
