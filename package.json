@@ -15,9 +15,12 @@
   },
   "packageManager": "yarn@3.2.4",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "got": "^12.5.1",
     "next": "^12.3.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tough-cookie": "^4.1.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
@@ -26,6 +29,7 @@
     "@types/node": "^16.11.64",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "@types/tough-cookie": "^4.0.2",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "eslint": "^8.25.0",
     "eslint-config-next": "^12.3.1",

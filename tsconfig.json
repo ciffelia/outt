@@ -7,6 +7,10 @@
 
     "module": "esnext",
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
 
     "allowJs": true,
     "resolveJsonModule": true,
