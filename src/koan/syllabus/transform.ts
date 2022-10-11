@@ -24,11 +24,11 @@ const periodDayToText: { [K in PeriodDay]: string } = {
 };
 
 const textToDuration = Object.fromEntries(
-  Object.entries(durationToText).map((x) => x.reverse()),
+  Object.entries(durationToText).map(([k, v]) => [v, k]),
 ) as { [K in string]: Duration };
 
 const textToPeriodDay = Object.fromEntries(
-  Object.entries(periodDayToText).map((x) => x.reverse()),
+  Object.entries(periodDayToText).map(([k, v]) => [v, k]),
 ) as { [K in string]: PeriodDay };
 
 export const stringifyDuration = (duration: Duration): string =>
