@@ -1,8 +1,8 @@
 import * as cheerio from 'cheerio';
-import type { Course, SearchQuery } from './types';
 import { createSession } from '../session';
 import { createClient } from '../client';
-import { parseDuration, parsePeriodList } from '@/koan/syllabus/transform';
+import type { Course, SearchQuery } from './types';
+import { parseDuration, parsePeriodList } from './transform';
 
 export const search = async (query: SearchQuery): Promise<Course[]> => {
   const { flowExecutionKey, cookieJar } = await createSession();
